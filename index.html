@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <style>
         body {
             text-align: center;
+			font-family: 'Lato', sans-serif;
         }
 
         #header {
@@ -25,14 +27,27 @@
         }
 
         img {
-            width: 100%;
+            max-height: 60vh; /* Set max height to 60% of the viewport height */
+            width: auto; /* Maintain aspect ratio */
         }
 
         #coming-soon {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             padding: 20px;
         }
+		
+		#contact {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0px;
+        }
+		/* Larger slideshow buttons */
+        .prev, .next {
+            font-size: 24px;
+            padding: 10px;
+        }
+		
     </style>
     <title>Raag Music</title>
 </head>
@@ -49,7 +64,16 @@
             <img src="2.jpg" alt="Image 2">
         </div>
         <div class="mySlides">
-            <img src="image3.jpg" alt="Image 3">
+            <img src="3.jpg" alt="Image 3">
+        </div>
+		<div class="mySlides">
+            <img src="4.jpg" alt="Image 3">
+        </div>
+		<div class="mySlides">
+            <img src="5.jpg" alt="Image 3">
+        </div>
+		<div class="mySlides">
+            <img src="6.jpg" alt="Image 3">
         </div>
 
         <!-- Navigation buttons -->
@@ -58,7 +82,10 @@
     </div>
 
     <div id="coming-soon">
-        Coming Soon
+        Prof. Shahid Hamid's website coming soon.
+    </div>
+	<div id="contact">
+        Contact him at shahid180@hotmail.com
     </div>
 
     <script>
