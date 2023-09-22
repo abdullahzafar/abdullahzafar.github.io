@@ -3,91 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <title>Raag Music</title>
     <style>
         body {
+            font-family: 'Lato', sans-serif;
             text-align: center;
-			font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        #header {
+        #header1 {
             font-size: 24px;
+            margin-top: 20px; /* Maintain the existing margin */
+            margin-bottom: 10px; /* Added margin below the header */
             font-weight: bold;
-            padding: 20px;
+        }
+		
+		#title_link {
+			text-decoration: none;
+            color: black;
+		}
+
+        #header2 {
+            font-size: 16px;
+            margin-top: 20px; /* Maintain the existing margin */
+            font-weight: bold;
+            padding: 5px;
         }
 
-        #slideshow-container {
-            max-width: 80%;
-            margin: 0 auto;
+        .slideshow-container {
+            width: 100%;
+            height: 60vh;
             position: relative;
+            overflow: hidden;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .mySlides {
+        .slideshow-container img {
+            max-width: 100%;
+            max-height: 100%;
             display: none;
         }
 
-        img {
-            max-height: 60vh; /* Set max height to 60% of the viewport height */
-            width: auto; /* Maintain aspect ratio */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 36px;
+            cursor: pointer;
+            background-color: transparent; /* Transparent background */
+            color: black; /* Black text color */
+            padding: 10px 15px;
+            z-index: 1;
+            /*-webkit-text-stroke: 1px white; White stroke around text */
+            text-shadow: 3px 0px 0px white;
         }
 
-        #coming-soon {
-            font-size: 20px;
-            font-weight: bold;
-            padding: 20px;
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
         }
 		
-		#contact {
+		/* Added margin to all nav elements */
+        nav a {
+            margin: 10px; /* Adjust the margin as needed */
+        }
+
+        #contact {
             font-size: 16px;
             font-weight: bold;
-            padding: 0px;
-        }
-		/* Larger slideshow buttons */
-        .prev, .next {
-            font-size: 24px;
             padding: 10px;
         }
-		
+
+        @media (min-width: 768px) {
+            .slideshow-container {
+                width: 50%;
+            }
+        }
     </style>
-    <title>Raag Music</title>
 </head>
 <body>
-    <div id="header">
-        Raag Music
-    </div>
-
-    <div id="slideshow-container">
-        <div class="mySlides">
-            <img src="1.jpg" alt="Image 1">
-        </div>
-        <div class="mySlides">
-            <img src="2.jpg" alt="Image 2">
-        </div>
-        <div class="mySlides">
-            <img src="3.jpg" alt="Image 3">
-        </div>
-		<div class="mySlides">
-            <img src="4.jpg" alt="Image 4">
-        </div>
-		<div class="mySlides">
-            <img src="5.jpg" alt="Image 5">
-        </div>
-		<div class="mySlides">
-            <img src="6.jpg" alt="Image 6">
-        </div>
-
+    <header id="header1"><a id="title_link" href="index.html">Raag Music</a></header>
+    <!-- Add the "About" and "Recordings" links here -->
+    <nav>
+        <a href="#about">About</a>|<a href="recordings.html">Recordings</a>
+    </nav>
+    <div class="slideshow-container">
+        <!-- Slideshow images go here -->
+        <img src="1.jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+        <img src="3.jpg" alt="Image 3">
+        <img src="4.jpg" alt="Image 4">
+        <img src="5.jpg" alt="Image 5">
+        <img src="6.jpg" alt="Image 6">
         <!-- Navigation buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-    <div id="coming-soon">
-        Prof. Shahid Hamid's website coming soon.
-    </div>
-	<div id="contact">
-        Contact him at shahid180@hotmail.com
-    </div>
-
+    <header class="coming-soon" id="header2">Contact Prof. Shahid Hamid at shahid180@hotmail.com</header>
+    <!-- JavaScript for slideshow -->
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -97,20 +117,17 @@
         }
 
         function showSlides(n) {
-            const slides = document.getElementsByClassName("mySlides");
-
+            let slides = document.querySelectorAll('.slideshow-container img');
             if (n > slides.length) {
                 slideIndex = 1;
             }
             if (n < 1) {
                 slideIndex = slides.length;
             }
-
             for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                slides[i].style.display = 'none';
             }
-
-            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = 'block';
         }
     </script>
 </body>
