@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raag Music - Recordings</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header1 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #title_link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .slideshow-container {
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            overflow: hidden;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slideshow-container img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 36px;
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            padding: 10px 15px;
+            z-index: 1;
+            text-shadow: 3px 0px 0px white;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        #contact {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        #recording-header {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-inner-container {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 80%;
+        }
+
+        hr {
+            margin: 20px auto; /* Center the horizontal line */
+            border: none; /* Remove the default line styles */
+            border-top: 2px solid black; /* Add a custom black border on top */
+            width: 80%;
+        }
+
+        /* Media query for screens wider than 600px */
+        @media (min-width: 600px) {
+            .content-container {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+            }
+
+            .content-inner-container {
+                flex-direction: column;
+                justify-content: center;
+				text-align: left;
+                width: 50%;
+            }
+
+            #recording-header {
+                margin-right: 20px;
+                white-space: nowrap;
+            }
+
+            hr {
+                width: 50%;
+            }
+        }
+		
+		/* Style the floral motif */
+        .floral-motif::before {
+            content: "✿"; /* ASCII-based floral symbols */
+            color: #ff69b4; /* Change the color as desired */
+            display: block;
+			margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header1"><a id="title_link" href="index.html">Raag Music</a></header>
+    <nav>
+        <a href="about.html">About</a>|<a href="recordings.html">Recordings</a>
+    </nav>
+    
+    <hr>
+    
+    <!-- About Us Section -->
+    <div class="content-container">
+        <div class="content-inner-container">
+            <!-- Insert "About Us" Text Here -->
+            <h2>About Us</h2>
+            <p>
+                Welcome to Raag Music, your gateway to the enchanting world of North Indian Classical Music, also known as Hindustani Music.
+            </p>
+            <h3 style="margin-bottom: 0;">Our Mission</h3>
+            <p>
+                At Raag Music, we are dedicated to the preservation and promotion of North Indian Classical Music, an art form that has captivated hearts for centuries. Our journey began with the publication of the book "Raag Music," authored by Prof. Shahd Hamid and published in Karachi by Tehzeeb Foundation of Pakistan in 2015.
+            </p>
+			<h3 style="margin-bottom: 0;">Simplifying the Art</h3>
+            <p>
+				<b>Raag Music</b> was created with an objective – to simplify the often-intimidating process of learning this rich musical tradition. We understand that many aspiring students find themselves daunted by the tutelage of traditional Ustads. That's why we've meticulously detailed 82 prevailing Raags and compiled a collection of 172 traditional compositions, all presented in the Bhatkhande style of notation. This book doesn't just stop at practical details; it delves deep into theoretical discussions, musical analysis, and technical nuances of Raags. To make the learning experience even more immersive, we've included audio demonstrations of select essential Raags, voiced by Prof. Hamid himself.
+            </p>
+			<h3 style="margin-bottom: 0;">Interactive Learning</h3>
+            <p>
+				As we step into the digital age, <b>Raag Music</b> has expanded its reach. In the second edition of our book, you'll find QR codes embedded within the pages. These codes unlock a treasure trove of audio clips, allowing you to listen and learn directly from the masterful renditions by the author.
+            </p>
+			<h3 style="margin-bottom: 0;">Our Online Hub</h3>
+            <p>
+				Through our online platform, we offer virtual lessons and a wealth of educational materials, allowing aspiring students from around the world to embark on their musical journey.
+				Join us in celebrating the melodious tapestry of North Indian Classical Music. Explore the depths of Raags, dive into the rich history, and embark on your musical voyage with <b>Raag Music</b>.
+            </p>
+            <!-- Continue inserting the rest of the "About Us" text here -->
+
+        </div>
+    </div>
+	    <!-- Floral Motif -->
+    <div class="floral-motif"></div>
+</body>
+</html>
