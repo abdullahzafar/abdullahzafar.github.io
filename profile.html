@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raag Music - Recordings</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header1 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #title_link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .slideshow-container {
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            overflow: hidden;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slideshow-container img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 36px;
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            padding: 10px 15px;
+            z-index: 1;
+            text-shadow: 3px 0px 0px white;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        #contact {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        #recording-header {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-inner-container {
+            text-align: left;
+            width: 80%;
+        }
+
+        hr {
+            margin: 20px auto; /* Center the horizontal line */
+            border: none; /* Remove the default line styles */
+            border-top: 2px solid black; /* Add a custom black border on top */
+            width: 80%;
+        }
+		
+		img {
+            max-width: 100%;
+        }
+		
+        /* Media query for screens wider than 600px */
+        @media (min-width: 600px) {
+            .content-container {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+            }
+
+            .content-inner-container {
+			    text-align: justify;
+                width: 50%;
+            }
+
+            #recording-header {
+                margin-right: 20px;
+                white-space: nowrap;
+            }
+
+            hr {
+                width: 50%;
+            }
+			
+			img {
+                width: 35%;
+				float: right;
+				padding: 20px;
+            }
+        }
+		
+		/* Style the floral motif */
+        .floral-motif::before {
+            content: "✿"; /* ASCII-based floral symbols */
+            color: #ff69b4; /* Change the color as desired */
+            display: block;
+			margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header1"><a id="title_link" href="index.html">Raag Music</a></header>
+    <nav>
+        <a href="about.html">About</a>|<a href="profile.html">Profile</a>|<a href="recordings.html">Recordings</a>
+    </nav>
+    
+    <hr>
+    
+    <!-- About Us Section -->
+    <div class="content-container">
+        <div class="content-inner-container">
+            <!-- Insert "About Us" Text Here -->
+            <h2>Profile</h2>
+			<div class="image-wrapper">
+				<img src="2.jpg" alt="Your Image Alt Text">
+            </div>
+            <div class="text-wrapper">
+            <p>
+               Professor Shahid Hamid is a distinguished vocalist, accomplished musicologist, and a certified music educator. While his professional career revolved around banking, he fervently pursued music as a passion. He has authored four books on Classical Indian Music, including the highly regarded "Raag Music" published by the Tehzeeb Foundation in both English and Urdu. The book provides an extensive exploration of the complexities inherent to Indian Classical Music. Presently, Professor Hamid imparts his expertise as a classical music instructor at PACC, Karachi, and concurrently holds the esteemed role of Visiting Professor of Creative Practice at Habib University, Karachi.
+            </p>
+            </div>
+ 
+            <h3 style="margin-bottom: 0;">Books Authored:</h3>
+            <ol>
+                <li><i>Raag Music: A Practical Guide in English</i> (2015): This seminal work, published by the Tehzeeb Foundation of Pakistan, was unveiled at the prestigious Karachi Literature Festival, hosted by Oxford University Press. The formal launch took place at the distinguished auditorium of the Arts Council, Karachi, presided over by Mr. Anwar Maqsood, a celebrated actor and television personality.</li>
+				<br>
+				<li><i>Raag Mousiqi: A Practical Guide in Urdu</i> (2016): In response to persistent demand from an enthusiastic readership encompassing students, educators, and music aficionados, Professor Hamid authored an Urdu version of the book, published by the Tehzeeb Foundation of Pakistan. The official launch occurred on December 8, 2016, at the Readers Club in DHA Karachi, complete with an accompanying audio disc in Urdu.</li>
+				<br>
+				<li><i>Music Chronicles: A Beginner's Guide to Pakistani Music</i> (2018): Conceived under the auspices of IAM KARACHI, this literary work was crafted with the aim of acquainting young audiences with the rich tapestry of music culture and traditions in Pakistan. Its formal introduction transpired at T2F Karachi on April 25, 2018.</li>
+				<br>
+				<li><i>100 Popular Singing Ghazals</i> (2021): This comprehensive compilation of 100 renowned singing Ghazals, spanning from the 13th Century to the 20th Century, was published by the Tehzeeb Foundation and ceremoniously unveiled in September 2021 at the PACC Auditorium, Karachi.</li>
+			</ol>
+			<h3 style="margin-bottom: 0;">Teaching Experience</h3>
+            <ul>
+				<li>Professor Hamid's teaching journey began with a seven-year tenure at NATAK from 1976 to 1983.</li>
+				<br>
+				<li>In 2016, he became a <i>Music Consultant</i> at PNCA, Karachi, where he meticulously conducted three batches of a six-month music course, until 2018.</li>
+				<br>
+				<li>In 2019, he assumed the role of <i>Classical Music Teacher</i> at PACC, Karachi, and is currently overseeing the institution's tenth batch of a six-month course.</li>
+				<br>
+				<li>In 2021, he assumed the role of <i>Adjunct Faculty Member</i> at Habib University, successfully conducting three semesters - Fall 21, Spring 22, Fall 22 - wherein he adeptly facilitated courses in <i>Kheyal Gayeki</i>, <i>Ghazal Gayeki</i>, and <i>Thumri Gayeki</i>, respectively. </li>
+				<br>
+				<li>In 2023, he assumed the role of <i>Visiting Professor of Practice</i> at Habib University, wherein he introduced a new course on Folk music - Spring 23 - and continues to offer courses on Indian Classic Music.</li>
+			</ul>
+			
+			<h3 style="margin-bottom: 0;">Professional Experience - Live Performances</h3>
+            <ul>
+				<li>Professor Hamid is a recurring presence at eminent classical music events, including those organized by the Tehzeeb Foundation and APMC Karachi.</li>
+				<br>
+				<li>He represented Pakistan in the landmark <i>Folk Nations Residency Project</i> orchestrated by the British Council from February 10th to 17th, 2013, at the Vedic Village Spa Resort in Kolkata, India. This collaborative endeavor featured artists hailing from the United Kingdom, Bangladesh, India and Pakistan. The culminating performance transpired at the Rabindranath Tagore Cultural Centre in Kolkata, India.</li>
+			</ul>
+			<h3 style="margin-bottom: 0;">Miscellaneous</h3>
+            <ul>
+				<li>A 31-year Banking Career at SBP: Beyond his illustrious musical pursuits, Professor Hamid embarked on his banking career in 1979, ascending to the prestigious position of Joint Director at the State Bank of Pakistan. Over the course of 18 years, he honed his acumen in HR/Administration. In December 2010, he opted for early retirement to wholeheartedly dedicate himself to the cause of preserving and institutionalizing traditional music, a mission he ardently champions.</li>
+			</ul>
+        </div>
+    </div>
+	    <!-- Floral Motif -->
+    <div class="floral-motif"></div>
+</body>
+</html>
