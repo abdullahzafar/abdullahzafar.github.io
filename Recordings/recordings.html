@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raag Music - Recordings</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header1 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #title_link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .slideshow-container {
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            overflow: hidden;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slideshow-container img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 36px;
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            padding: 10px 15px;
+            z-index: 1;
+            text-shadow: 3px 0px 0px white;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        #contact {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        #recording-header {
+            font-size: 20px;
+            font-weight: bold;
+			padding-bottom: 5px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+			align-items: center;
+			justify-content: center;
+        }
+		
+		.content-inner-container {
+            display: flex;
+            flex-direction: column;
+			text-align: left;
+			width: 80%;
+			margin-bottom: 20px;
+        }
+		
+		hr {
+            margin: 20px auto; /* Center the horizontal line */
+            border: none; /* Remove the default line styles */
+            border-top: 2px solid black; /* Add a custom black border on top */
+			width: 80%;
+        }
+
+		.separator-hr {
+			border: none; /* Remove the default line styles */
+			width: 80%;
+			border-top: 2px dotted gray; 
+				
+		}
+        /* Media query for screens wider than 600px */
+        @media (min-width: 600px) {
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+				justify-content: center;
+				padding: 0;
+            }
+           	
+			.content-inner-container {
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				margin-bottom: 20px;
+			}
+            #recording-header {
+                margin-right: 20px;
+				white-space: nowrap;
+            }
+			
+			hr {
+				width: 50%;
+			}
+			
+			.separator-hr {
+				width: 50%;
+				border-top: 2px dotted gray; 	
+			}
+        }
+    </style>
+</head>
+<body>
+    <header id="header1"><a id="title_link" href="index.html">Raag Music</a></header>
+    <nav>
+        <a href="about.html">About</a>|<a href="profile.html">Profile</a>|<a href="recordings.html">Recordings</a>
+    </nav>
+	
+	<hr>
+	
+    <div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Kaly<SPAN STYLE="text-decoration:overline">a</SPAN>n</header>
+			<audio controls>
+				<source src="Recordings\01- Kalyan Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Yaman</header>
+			<audio controls>
+				<source src="Recordings\02- Raag Yaman.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Bil<SPAN STYLE="text-decoration:overline">a</SPAN>wal</header>
+			<audio controls>
+				<source src="Recordings\03- Bilawal Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Bih<SPAN STYLE="text-decoration:overline">a</SPAN>g</header>
+			<audio controls>
+				<source src="Recordings\04- Raag Bihag_compressed.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+		<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Kham<SPAN STYLE="text-decoration:overline">a</SPAN>j</header>
+			<audio controls>
+				<source src="Recordings\05- Khamaj Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Jaijaivanti</header>
+			<audio controls>
+				<source src="Recordings\06- Raag Jaijaivanti.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	    </div>
+		<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t K<SPAN STYLE="text-decoration:overline">a</SPAN>fi</header>
+			<audio controls>
+				<source src="Recordings\07- Kaafi Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Megh</header>
+			<audio controls>
+				<source src="Recordings\08- Raag Megh.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t As<SPAN STYLE="text-decoration:overline">a</SPAN>vari</header>
+			<audio controls>
+				<source src="Recordings\09- Asawari Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Jaunpuri</header>
+			<audio controls>
+				<source src="Recordings\10- Raag Jaunpuri.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Bhairvi</header>
+			<audio controls>
+				<source src="Recordings\11- Bhairvi Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g M<SPAN STYLE="text-decoration:overline">a</SPAN>lkauns</header>
+			<audio controls>
+				<source src="Recordings\12- Raag Malkauns.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Bhairov</header>
+			<audio controls>
+				<source src="Recordings\13- Bhairov Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Bhairov</header>
+			<audio controls>
+				<source src="Recordings\14- Raag Bhairov_compressed.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Todi</header>
+			<audio controls>
+				<source src="Recordings\15- Todi Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Mian ki Todi</header>
+			<audio controls>
+				<source src="Recordings\16- Raag Mian ki Todi_compressed.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Poorbi</header>
+			<audio controls>
+				<source src="Recordings\17- Poorbi Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g Puriya Dhan<SPAN STYLE="text-decoration:overline">a</SPAN>sri</header>
+			<audio controls>
+				<source src="Recordings\18- Raag Puriya Dhanasri_compressed.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+	<div class="content-container">
+		<div class="content-inner-container">
+			<header id="recording-header">Th<SPAN STYLE="text-decoration:overline">a</SPAN>t Marwa</header>
+			<audio controls>
+				<source src="Recordings\19- Marwa Thaat Intro.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<div class="content-inner-container">
+			<header id="recording-header">R<SPAN STYLE="text-decoration:overline">a</SPAN>g M<SPAN STYLE="text-decoration:overline">a</SPAN>rwa</header>
+			<audio controls>
+				<source src="Recordings\20- Raag Marwa_compressed.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		
+		<hr class="separator-hr">
+    </div>
+</body>
+</html>
